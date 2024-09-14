@@ -1,0 +1,45 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <header>
+        <h1>Service Request</h1>
+    </header>
+    <main>
+        <section class="video-containers">
+            <h2>Upload Your Videos</h2>
+            <div class="video-container">
+                <input type="file" id="video1" accept="video/*">
+                <label for="video1">Video 1</label>
+              
+            </div>
+            <div class="video-container">
+                <input type="file" id="video2" accept="video/*">
+                <label for="video2">Video 2</label>
+            
+            </div>
+            <div class="video-container">
+                <input type="file" id="video3" accept="video/*">
+                <label for="video3">Video 3</label>
+           
+            </div>
+            <button id="submit-btn">Submit</button>
+        </section>
+        <section class="service-request">
+            <h2>Request a Service</h2>
+            <form id="service-form">
+                <textarea id="service-text" placeholder="Type your service request here..."></textarea>
+                <button id="send-btn">Send</button>
+            </form>
+        </section>
+    </main>
+    <script src="video.js"></script>
+</body>
+</html>

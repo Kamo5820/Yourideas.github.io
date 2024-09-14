@@ -1,0 +1,54 @@
+.payment-success {
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(rgba(41, 249, 59, 0.816), rgb(0, 0, 0), rgb(26, 173, 218)), url('Cloud.jpg'); /* Add a background image with blur effect */
+    background-size: cover;
+    height: 100vh; /* Set the height to 100 viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed; /* Fix the background image */
+}
+
+.success-image {
+    width: 7%;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.success-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #43cc2e;
+}
+
+.dashboard-link {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dashboard-link:hover {
+    background-color: #3e8e41;
+}
+
+/* Add a blur effect to the background image */
+.payment-success::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    filter: blur(5px); /* Blur the background image */
+    z-index: -1; /* Move the blur effect behind the content */
+}

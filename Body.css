@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1em 0;
+    text-align: center;
+    background: linear-gradient(to right, #ff03f7, #1ef930,rgb(45, 119, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.slogan {
+    font-size: 1.3em;
+    margin-top: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    background-color:blue;
+    display: flex;
+    gap: 300px; /* Add space between flex items */
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 2em;
+    display: block;
+   
+}
+
+nav ul li {
+    margin: 0 15px; /* Add margin to separate the items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1.4em;
+    display: block;
+    transition: background-color 0.5s ease, box-shadow 0.6s ease;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+    box-shadow: 0 0 100px #35e425, 0 0 120px #1d20d7, 0 0 70px #e45825; /* Glowing effect */
+}
+main {
+    padding: 2em;
+    background-color: white;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 7em 0;
+}
+
+.image-container img {
+    width: 31%;
+    transition: opacity 1s;
+}
+
+.image-container img.fade {
+    opacity: 0.5;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #000000;
+    color: white;
+    position: ;
+    width: 97.5%;
+    height: 1%;
+    bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3E8E41;
+}
+
+/* Add blur effect to background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Farm.jpg');
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Add glowing scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4c8ac0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0022ff;
+}
+/* Add blur effect to background */
+body::before {
+    content: "";
+    position: center;
+    top: 0;
+    right: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url('Cloud.jpg');
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e131c7;
+    margin: 0;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    border: 2px solid #c310ff;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+.flex-container {
+    display: flex;
+    gap: 250px; /* Add space between flex items */
+    margin: 20px 0;
+}
+.fire-button {
+    padding: 20px;
+    border: none;
+    background-color: #ff00fb; /* Base color of the button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.evaporate-button {
+    padding: 20px;
+    width: 120px;
+    height: 80px;
+    border: none;
+    background-color: #1500ff; /* Base color of the button */
+    background: linear-gradient(to right, #ff03f7, #1ef930,rgb(45, 119, 255));
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.evaporate-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(77, 113, 246, 0.762) 20%, transparent 70%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.8s ease;
+    border-radius: 50%;
+}
+
+.evaporate-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+.evaporate-button:hover {
+    background-color: #941bc4;
+    width: 77%;
+    color: transparent;
+    transform: scale(0.9);
+}
